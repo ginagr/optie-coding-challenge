@@ -1,0 +1,13 @@
+{
+	"name": "optie-coding-challenge",
+	"version": "1.0.0",
+	"description": "opte code challenge",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node server.js"
+	},
+	"author": "ggr",
+	"license": "ISC",
+	"dependencies": {}
+}
