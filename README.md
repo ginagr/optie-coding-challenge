@@ -3,7 +3,7 @@
 ## Overview:
 For this coding challenge we are asking you to write a program that parses a JSON object containing 1000 n-grams and sorts them into different categories. The categories should be based on the definition of the words, however, the manner that they are sorted is completely up to you. This means it is up to you to figure out how to find similarities between words and group them together.
 
-In this zip file you will find the skeleton of a single page site with blank HTML and CSS files, with the JSON object saved as *n-grams* within the JS file
+In this zip file you will find the skeleton of a single page site with blank HTML and CSS files, with the JSON object saved as *ngrams* within the JS file
 
 ---
 ## Setup:
@@ -40,8 +40,9 @@ Note: You may ask me up to three questions during the week. The questions can be
 
 ----
 ## Hints:
-1. Look into the [natural](https://www.npmjs.com/package/natural) library
+1. Look into the [natural](https://www.npmjs.com/package/natural) or [wordpos](https://www.npmjs.com/package/wordpos) libraries
 2. Focus on grouping words/phrases together
 3. Don't be afraid to be creative in figuring out how to define words
 4. Think about edge cases, but don't obsess
 5. Content over style -> the UI matters to the extent that we need to be able to easily visually see your output. If your solution/output doesn't work or make sense, the UI will not help you fake it
+6. Be aware that many n-grams may be in their own unique category with no other matches. Or that there are duplicate n-grams. It is up to you to come up with as little categories as possible though
