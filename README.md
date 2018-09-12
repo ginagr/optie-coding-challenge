@@ -29,7 +29,7 @@ This should start up the project and if you go to [http://localhost:8080](http:/
 * Everything must be written in Javascript, HTML or CSS
 * Comment lines/blocks of code that are not obvious to their purpose
 
-Note: You may ask me up to three questions during the week. The questions can be about anything relating to this challenge. However, I will not give you a direct solution if it is too broad or unspecific. 
+Note: You may ask me up to three questions during the week. The questions can be about anything relating to this challenge. However, I will not give you a direct solution if it is too broad or unspecific. My email: gina@optieapp.com
 
 ----
 ## What to Turn In:
