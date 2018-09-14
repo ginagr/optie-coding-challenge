@@ -9,5 +9,13 @@
 	},
 	"author": "ggr",
 	"license": "ISC",
-	"dependencies": {}
+	"dependencies": {},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ginagr/optie-coding-challenge.git"
+	},
+	"bugs": {
+		"url": "https://github.com/ginagr/optie-coding-challenge/issues"
+	},
+	"homepage": "https://github.com/ginagr/optie-coding-challenge#readme"
 }
