@@ -33,7 +33,7 @@ Note: You may ask me up to three questions during the week. The questions can be
 
 ----
 ## What to Turn In:
-1. The zip file with the HTML, CSS and JS files 
+1. The zip file with the HTML, CSS and JS files
 2. Please **do not** include the node-modules folder
 2. Update this README to **briefly** explain how you came to your solution and the libraries, frameworks and steps you took to complete the challenge
 3. Please name the zip file your entire name
@@ -46,3 +46,9 @@ Note: You may ask me up to three questions during the week. The questions can be
 4. Think about edge cases, but don't obsess
 5. Content over style -> the UI matters to the extent that we need to be able to easily visually see your output. If your solution/output doesn't work or make sense, the UI will not help you fake it
 6. Be aware that many n-grams may be in their own unique category with no other matches. Or that there are duplicate n-grams. It is up to you to come up with as little categories as possible though
+
+## Solution:
+
+To sort the Ngrams my first instinct was to make my own categories and assign key-words for those categories and then check the definitions to see if they had the keywords included. However this approach was not yielding the results I was looking for and a lot of words were getting left out and the wrong words were being included. Also, the wordpos library has many definitions for each word. So I decided to use the lexical definitions of the word to sort them. Lexical definition is defined as "of or relating to the words or vocabulary of a language, especially as distinguished from its grammatical and syntactical aspects."" The lexical definition is commonly used to explain how a word is generally used within a context.
+
+I used the wordpos and natural libraries combined to gather all the word information and definitions. I used the wordpos.getPOS functionality to sort the words into nouns, adj, verbs, adverbs and rest, then the wordpos.lookup to find definitions and information for each ngram. I then created an object for each ngram containing the ngram, and all definitons for it. Then I searched the results and sorted them based on lexical definition into groups and exported the categories in an object to the server to display in HTML.

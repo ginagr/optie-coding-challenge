@@ -3,3 +3,6 @@ const ngrams = {
 
 //TODO: logic to parse JSON object into categories
 
+module.exports = {
+  ngrams
+};
