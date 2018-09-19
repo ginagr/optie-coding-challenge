@@ -18,7 +18,7 @@ const finder = (data, query) => {
     let word = object.ngram;
 
     object.ngramData.forEach((info) => {
-      if(info.lexName.includes(query)){
+      if (info.lexName.includes(query)) {
         included = true;
       }
     });
@@ -48,7 +48,7 @@ const filter = (array) => {
  let sorted = array.sort((a, b) => a.length - b.length);
 
  sorted.forEach((ngram) => {
-   if(!results.includes(ngram)){
+   if (!results.includes(ngram)) {
      results.push(ngram);
    }
  });
@@ -109,7 +109,7 @@ async function assignCategories(ngramData) {
 
 
   // create ngram objects with all information (definitions, synonyms...etc) for nouns
-  for(let ngram of filteredData.nouns){
+  for (let ngram of filteredData.nouns) {
     let ngramInfo = await wordpos.lookupNoun(ngram);
     let info = {
       ngram,
@@ -118,7 +118,7 @@ async function assignCategories(ngramData) {
     nounResults.push(info);
   }
   // create ngram objects with all information (definitions, synonyms...etc) for verbs
-  for(let ngram of filteredData.verbs){
+  for (let ngram of filteredData.verbs) {
     let ngramInfo = await wordpos.lookupVerb(ngram);
     let info = {
       ngram,
@@ -127,7 +127,7 @@ async function assignCategories(ngramData) {
     verbResults.push(info);
   }
   // create ngram objects with all information (definitions, synonyms...etc) for adverbs
-  for(let ngram of filteredData.adverbs){
+  for (let ngram of filteredData.adverbs) {
     let ngramInfo = await wordpos.lookupAdverb(ngram);
     let info = {
       ngram,
@@ -136,7 +136,7 @@ async function assignCategories(ngramData) {
     adverbResults.push(info);
   }
   // create ngram objects with all information (definitions, synonyms...etc) for adjectives
-  for(let ngram of filteredData.adjectives){
+  for (let ngram of filteredData.adjectives) {
     let ngramInfo = await wordpos.lookupAdjective(ngram);
     let info = {
       ngram,
